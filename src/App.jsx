@@ -1,12 +1,15 @@
 import './styles/styles.scss'
 import { Route, Routes } from 'react-router-dom'
+import { Navbar } from './components'
+import { Home } from './pages'
 
 function App() {
   return (
     <>
-      <p className='read-the-docs'>
-        Click on the Vite and React logos to learn more
-      </p>
+      <Navbar />
+      <Routes>
+        <Route index='/' element={<Home />} />
+      </Routes>
     </>
   )
 }
