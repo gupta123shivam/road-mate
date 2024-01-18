@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom'
 import Logo from '../images/logo/logo.png'
 import { useState } from 'react'
 import { IconMenu2, IconX } from '@tabler/icons-react'
+import { navlinks } from '../constants/nav'
 
 function Navbar() {
   const [nav, setNav] = useState(false)
@@ -13,46 +14,23 @@ function Navbar() {
   return (
     <>
       <nav>
-        {/* mobile */}
+        {/* mobile navigation*/}
         <div className={`mobile-navbar ${nav ? 'open-nav' : ''}`}>
           <div onClick={toggleNav} className='mobile-navbar__close'>
             <IconX width={30} height={30} />
           </div>
           <ul className='mobile-navbar__links'>
-            <li>
-              <Link onClick={toggleNav} to='/'>
-                Home
-              </Link>
-            </li>
-            <li>
-              <Link onClick={toggleNav} to='/about'>
-                About
-              </Link>
-            </li>
-            <li>
-              <Link onClick={toggleNav} to='/models'>
-                Models
-              </Link>
-            </li>
-            <li>
-              <Link onClick={toggleNav} to='/testimonials'>
-                Testimonials
-              </Link>
-            </li>
-            <li>
-              <Link onClick={toggleNav} to='/team'>
-                Our Team
-              </Link>
-            </li>
-            <li>
-              <Link onClick={toggleNav} to='/contact'>
-                Contact
-              </Link>
-            </li>
+            {navlinks.map((item) => (
+              <li key={item.link}>
+                <Link onClick={toggleNav} to={`/${item.link}`}>
+                  {item.title}
+                </Link>
+              </li>
+            ))}
           </ul>
         </div>
 
-        {/* desktop */}
+        {/* desktop navigation bar*/}
 
         <div className='navbar'>
           <div className='navbar__img'>
@@ -61,41 +39,13 @@ function Navbar() {
             </Link>
           </div>
           <ul className='navbar__links'>
-            <li>
-              <Link className='home-link' to='/'>
-                Home
-              </Link>
-            </li>
-            <li>
-              {' '}
-              <Link className='about-link' to='/about'>
-                About
-              </Link>
-            </li>
-            <li>
-              {' '}
-              <Link className='models-link' to='/models'>
-                Vehicle Models
-              </Link>
-            </li>
-            <li>
-              {' '}
-              <Link className='testi-link' to='/testimonials'>
-                Testimonials
-              </Link>
-            </li>
-            <li>
-              {' '}
-              <Link className='team-link' to='/team'>
-                Our Team
-              </Link>
-            </li>
-            <li>
-              {' '}
-              <Link className='contact-link' to='/contact'>
-                Contact
-              </Link>
-            </li>
+            {navlinks.map((item) => (
+              <li key={item.link}>
+                <Link to={`/${item.link}`}>
+                  {item.title}
+                </Link>
+              </li>
+            ))}
           </ul>
           <div className='navbar__buttons'>
             <Link className='navbar__buttons__sign-in' to='/'>
