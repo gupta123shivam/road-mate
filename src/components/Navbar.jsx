@@ -1,8 +1,8 @@
-import { Link } from 'react-router-dom'
-import Logo from '../images/logo/logo.png'
 import { useState } from 'react'
 import { IconMenu2, IconX } from '@tabler/icons-react'
 import { navlinks } from '../constants/nav'
+import { Link } from 'react-router-dom'
+import Logo from '../images/logo/logo.png'
 
 function Navbar() {
   const [nav, setNav] = useState(false)
