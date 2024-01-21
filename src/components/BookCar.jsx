@@ -212,10 +212,18 @@ function BookCar() {
           </div>
         </div>
       </section>
-
       {/* modal ------------------------------------ */}
 
-      <BookingModal />
+      <BookingModal
+        modal={modal}
+        setModal={setModal}
+        pickTime={pickTime}
+        dropTime={dropTime}
+        pickUp={pickUp}
+        dropOff={dropOff}
+        imgUrl={imgUrl}
+        carType={carType}
+      />
     </>
   )
 }
