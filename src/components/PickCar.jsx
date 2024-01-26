@@ -3,7 +3,7 @@ import CarBox from './CarBox'
 import { CAR_DATA } from '../mock/_carData'
 
 function PickCar() {
-  const [active, setActive] = useState(CAR_DATA[0].id)
+  const [active, setActive] = useState(0)
 
   return (
     <>
@@ -21,12 +21,12 @@ function PickCar() {
             <div className='pick-container__car-content'>
               {/* pick car */}
               <div className='pick-box'>
-                {CAR_DATA.map((car) => {
+                {CAR_DATA.map((car, idx) => {
                   return (
                     <button
                       key={car.id}
-                      className={active == car.id ? 'colored-button' : ''}
-                      onClick={() => setActive(car.id)}
+                      className={active == idx ? 'colored-button' : ''}
+                      onClick={() => setActive(idx)}
                     >
                       {car.name}
                     </button>

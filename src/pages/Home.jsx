@@ -1,5 +1,4 @@
-import React from 'react'
-import { BookCar, Hero, PlanTrip } from '../components'
+import { BookCar, Hero, PickCar, PlanTrip } from '../components'
 
 const Home = () => {
   return (
@@ -7,6 +6,7 @@ const Home = () => {
       <Hero />
       <BookCar />
       <PlanTrip />
+      <PickCar />
     </>
   )
 }
