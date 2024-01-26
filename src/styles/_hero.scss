@@ -149,12 +149,13 @@
   right: 5rem;
   z-index: 20;
   display: none;
-  align-items: center;
   text-align: center;
-  justify-content: center;
   padding: 2rem;
   cursor: pointer;
   border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .show-scroll {

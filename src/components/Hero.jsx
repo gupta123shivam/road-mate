@@ -5,8 +5,6 @@ import BgShape from '../images/hero/hero-bg.png'
 import HeroCar from '../images/hero/main-car.png'
 import { IconChevronRight, IconCircleCheck } from '@tabler/icons-react'
 
-
-
 function Hero() {
   const [goDown, setGoDown] = useState(false)
 
@@ -34,7 +32,6 @@ function Hero() {
       window.removeEventListener('scroll', onPageScroll)
     }
   }, [])
-
 
   return (
     <>
@@ -79,7 +76,7 @@ function Hero() {
           onClick={scrollToTop}
           className={`scroll-up ${goDown ? 'show-scroll' : ''}`}
         >
-          ^
+          <span>^</span>
         </div>
       </section>
     </>
