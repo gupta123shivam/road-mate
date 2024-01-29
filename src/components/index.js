@@ -5,5 +5,15 @@ import PlanTrip from './PlanTrip'
 import PickCar from './PickCar'
 import Banner from './Banner'
 import ChooseUs from './ChooseUs'
+import Testimonials from './Testimonials'
 
-export { Navbar, Hero, BookCar, PlanTrip, PickCar, Banner, ChooseUs }
+export {
+  Navbar,
+  Hero,
+  BookCar,
+  PlanTrip,
+  PickCar,
+  Banner,
+  ChooseUs,
+  Testimonials,
+}

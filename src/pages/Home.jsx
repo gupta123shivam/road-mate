@@ -5,6 +5,7 @@ import {
   Hero,
   PickCar,
   PlanTrip,
+  Testimonials,
 } from '../components'
 
 const Home = () => {
@@ -16,6 +17,7 @@ const Home = () => {
       <PickCar />
       <Banner />
       <ChooseUs />
+      <Testimonials />
     </>
   )
 }
