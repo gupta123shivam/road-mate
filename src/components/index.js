@@ -6,6 +6,7 @@ import PickCar from './PickCar'
 import Banner from './Banner'
 import ChooseUs from './ChooseUs'
 import Testimonials from './Testimonials'
+import FAQ from './FAQ'
 
 export {
   Navbar,
@@ -16,4 +17,5 @@ export {
   Banner,
   ChooseUs,
   Testimonials,
+  FAQ,
 }
