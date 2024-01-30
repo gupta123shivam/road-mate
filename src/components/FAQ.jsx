@@ -3,7 +3,7 @@ import { useState } from 'react'
 import { que as faq } from '../mock/_faq'
 
 function Faq() {
-  const [activeQ, setActiveQ] = useState(0)
+  const [activeQ, setActiveQ] = useState(-1)
 
   return (
     <>
@@ -23,7 +23,10 @@ function Faq() {
               {faq.map((data, i) => (
                 <div key={i} className='faq-box'>
                   <div
-                    onClick={() => setActiveQ(i)}
+                    onClick={() => {
+                      if (activeQ == i) setActiveQ(-1)
+                      else setActiveQ(i)
+                    }}
                     className={`faq-box__question  ${
                       activeQ == i ? 'active-question' : ''
                     }`}
@@ -34,7 +37,7 @@ function Faq() {
                     <IconChevronDown />
                   </div>
                   <div
-                    onClick={() => setActiveQ(i)}
+                    onClick={() => setActiveQ(-1)}
                     className={`faq-box__answer ${
                       activeQ == i ? 'active-answer' : ''
                     }`}
