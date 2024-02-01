@@ -2,6 +2,7 @@ import {
   Banner,
   BookCar,
   ChooseUs,
+  Download,
   FAQ,
   Hero,
   PickCar,
@@ -20,6 +21,7 @@ const Home = () => {
       <ChooseUs />
       <Testimonials />
       <FAQ />
+      <Download />
     </>
   )
 }
