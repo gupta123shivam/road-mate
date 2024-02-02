@@ -8,6 +8,7 @@ import ChooseUs from './ChooseUs'
 import Testimonials from './Testimonials'
 import FAQ from './FAQ'
 import Download from './Download'
+import Footer from './Footer'
 
 export {
   Navbar,
@@ -20,4 +21,5 @@ export {
   Testimonials,
   FAQ,
   Download,
+  Footer
 }
