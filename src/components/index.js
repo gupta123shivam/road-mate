@@ -9,6 +9,7 @@ import Testimonials from './Testimonials'
 import FAQ from './FAQ'
 import Download from './Download'
 import Footer from './Footer'
+import HeroPage from './HeroPage'
 
 export {
   Navbar,
@@ -21,5 +22,6 @@ export {
   Testimonials,
   FAQ,
   Download,
-  Footer
+  Footer,
+  HeroPage,
 }
