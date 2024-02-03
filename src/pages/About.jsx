@@ -1,5 +1,6 @@
 import { IconPhone } from '@tabler/icons-react'
 import Footer from '../components/Footer'
+import {HeroPage, PlanTrip} from '../components'
 import AboutMain from '../images/about/about-main.jpg'
 import Box1 from '../images/about/icon1.png'
 import Box2 from '../images/about/icon2.png'
@@ -9,6 +10,7 @@ function About() {
   return (
     <>
       <section className='about-page'>
+        <HeroPage name='About' />
         <div className='container'>
           <div className='about-main'>
             <img
@@ -51,6 +53,7 @@ function About() {
               </div>
             </div>
           </div>
+          <PlanTrip />
         </div>
       </section>
       <div className='book-banner'>
