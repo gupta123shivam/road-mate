@@ -26,7 +26,7 @@ function Footer() {
                 carrental@gmail.com'
                 >
                   <IconMail />
-                  &nbsp; carrental@gmail.com
+                  &nbsp; roadmate@gmail.com
                 </a>
               </li>
 
