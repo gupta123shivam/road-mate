@@ -1,5 +1,4 @@
 import { IconPhone } from '@tabler/icons-react'
-import Footer from '../components/Footer'
 import {HeroPage, PlanTrip} from '../components'
 import AboutMain from '../images/about/about-main.jpg'
 import Box1 from '../images/about/icon1.png'
@@ -68,7 +67,6 @@ function About() {
           </div>
         </div>
       </div>
-      <Footer />
     </>
   )
 }

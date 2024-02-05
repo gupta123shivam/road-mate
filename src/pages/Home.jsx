@@ -4,7 +4,6 @@ import {
   ChooseUs,
   Download,
   FAQ,
-  Footer,
   Hero,
   PickCar,
   PlanTrip,
@@ -23,7 +22,6 @@ const Home = () => {
       <Testimonials />
       <FAQ />
       <Download />
-      <Footer/>
     </>
   )
 }
