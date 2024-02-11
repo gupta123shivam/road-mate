@@ -1,6 +1,6 @@
 import MainImg from '../images/chooseUs/main.png'
 import { IconChevronRight } from '@tabler/icons-react'
-import { textLeft, textRight } from '../mock/_whychooseus'
+import { textLeft, textRight } from '../mock/_chooseus'
 
 function ChooseUs() {
   return (

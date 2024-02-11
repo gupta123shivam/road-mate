@@ -1,3 +1,7 @@
+import Img1 from '../images/chooseUs/icon1.png'
+import Img2 from '../images/chooseUs/icon2.png'
+import Img3 from '../images/chooseUs/icon3.png'
+
 export const textLeft = {
   title: `Best valued deals you will ever find
 `,
@@ -7,7 +11,7 @@ export const textLeft = {
 }
 export const textRight = [
   {
-    image: `src/images/chooseUs/icon1.png`,
+    image: Img1,
     title: `Cross Country Drive
 `,
     text: `Take your driving experience to the next level with our top-notch vehicles for your cross-country adventures.
@@ -15,7 +19,7 @@ export const textRight = [
 `,
   },
   {
-    image: `src/images/chooseUs/icon2.png`,
+    image: Img2,
     title: `All Inclusive Pricing
 `,
     text: `Get everything you need in one convenient, transparent price with our all-inclusive pricing policy.
@@ -24,7 +28,7 @@ export const textRight = [
   },
 
   {
-    image: `src/images/chooseUs/icon3.png`,
+    image: Img3,
     title: `No Hidden Charges
 `,
     text: `Enjoy peace of mind with our no hidden charges policy. We believe in transparent and honest pricing.
