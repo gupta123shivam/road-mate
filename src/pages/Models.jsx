@@ -54,7 +54,7 @@ function Models() {
                         </span>
                       </div>
                       <div className='models-div__box__descr__name-price__btn'>
-                        <Link onClick={() => window.scrollTo(0, 0)} to='/'>
+                        <Link to='/'>
                           Book Ride
                         </Link>
                       </div>

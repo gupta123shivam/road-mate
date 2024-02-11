@@ -32,7 +32,7 @@ function Contact() {
                 <label>
                   Full Name <b>*</b>
                 </label>
-                <input type='text' placeholder='E.g: "Joe Shmoe"'></input>
+                <input type='text' placeholder='E.g: "Harry Potter"'></input>
 
                 <label>
                   Email <b>*</b>
